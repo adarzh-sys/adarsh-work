@@ -59,9 +59,9 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 
-Based on a template by Yihui Hu.
-
 ## 🔖 Sites referenced:
+Based on a template by [Yihui Hu](https://www.yihui.work/).
+
 1. [https://kevinnchen.com/](https://kevinnchen.com/)
 2. [https://gemmacope.land/](https://gemmacope.land/)
 3. [https://jake.isnt.online/](https://jake.isnt.online/)
