@@ -1,0 +1,86 @@
+@use "base";
+
+.about-page-wrapper {
+  background-color: base.$gray-bg;
+}
+
+.about-page-container {
+  position: relative;
+  padding: 25px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  height: 100dvh;
+  gap: 55px;
+}
+
+.about-image {
+  filter: grayscale(100);
+  border-radius: 8px;
+  width: 60%;
+}
+
+.about-image-caption {
+  color: gray;
+  font-size: 12px;
+}
+
+.about {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.back-button {
+  display: none;
+}
+
+@media screen and (max-width: 864px) {
+  #sidebar {
+    display: none;
+  }
+
+  .about-image,
+  .about {
+    width: 100%;
+  }
+
+  .about-page-container {
+    height: auto;
+  }
+
+  .back-button {
+    display: block;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+  }
+
+  .back-button p > a {
+    color: base.$gray-content;
+    text-decoration: none;
+
+    &:visited {
+      color: base.$gray-content;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-page-container {
+    padding: 15px;
+    height: auto;
+  }
+
+  .back-button {
+    right: 15px;
+    top: 15px;
+  }
+}

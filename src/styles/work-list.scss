@@ -1,0 +1,161 @@
+@use 'base';
+
+.works-container {
+  width: auto;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.works-hr {
+  border: 0.5px solid base.$gray-content;
+  margin-bottom: 20px;
+}
+
+.tags > p {
+  font-family: "Fragment Mono", sans-serif;
+}
+
+.tag {
+  cursor: pointer;
+}
+
+.work-description {
+  display: block;
+}
+
+.work-blurb {
+  display: none;
+}
+
+.works-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 1.7fr 5fr 1fr;
+  cursor: pointer;
+  padding-block: 2px;
+}
+
+.work-link:hover {
+  text-decoration: none;
+}
+
+.deselected {
+  filter: saturate(0);
+  opacity: 0.3;
+}
+
+.label-wrapper {
+  display: "flex"; 
+  flex-direction: "row"; 
+  gap: 5;
+}
+
+.new-label {
+  display: inline-block;
+  padding-inline: 4px;
+  border-radius: 2px;
+  background-color: base.$blue-bg;
+  width: auto;
+}
+
+.new-text {
+  color: base.$blue-text;
+}
+
+.wip-label {
+  display: inline-block;
+  padding-inline: 4px;
+  border-radius: 2px;
+  background-color: base.$orange-bg;
+  width: auto;
+}
+
+.wip-text {
+  color: base.$orange-text;
+}
+
+@media screen and (max-width: 1366px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr 0.7fr;
+    gap: 10px;
+  }
+
+  .work-description {
+    display: none;
+  }
+  
+  .work-blurb {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+  }
+
+  .work-description {
+    display: none;
+  }
+
+  .work-blurb {
+    display: block;
+  }
+
+  .work-label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.5fr;
+    gap: 10px;
+  }
+
+  .work-description {
+    display: block;
+  }
+
+  .work-blurb {
+    display: none;
+  }
+
+  .work-label {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+  }
+
+  .work-description {
+    display: none;
+  }
+
+  .work-blurb {
+    display: block;
+  }
+
+  .work-label {
+    display: none;
+  }
+}
+
+

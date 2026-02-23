@@ -1,0 +1,99 @@
+@use 'base';
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Highlight / selection */
+p,
+a,
+li,
+div,
+br,
+span {
+  &::selection {
+    color: base.$gray-bg;
+    background-color: base.$gray-content;
+  }
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100dvh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.name {
+  font-family: "Fragment Mono", monospace, Arial, Helvetica, sans-serif;;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-link {
+  font-size: 14px;
+  text-decoration: none;
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.wavy-link {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: base.$gray-content;
+
+  &:hover {
+    text-decoration-style: wavy;
+  }
+
+  &:visited {
+    color: inherit
+  }
+}
+
+.gray-link {
+  color: base.$gray-content;
+  text-decoration: none;
+
+  &:visited {
+    color: base.$gray-content;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,33 @@
+---
+import NotesSidebar from "./NotesSidebar.astro";
+import "@fontsource/fragment-mono";
+import "@fontsource-variable/inter";
+import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/article.scss";
+import "../styles/notes.scss";
+import { ViewTransitions } from 'astro:transitions';
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
+    <meta name="description" content={frontmatter.description} />
+    <title>{frontmatter.title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="index-container">
+      <div id="sidebar">
+        <NotesSidebar />
+      </div>
+      <div class="note-container">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>

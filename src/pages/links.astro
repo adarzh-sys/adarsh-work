@@ -1,0 +1,84 @@
+---
+import "@fontsource/fragment-mono";
+import "../styles/global.scss";
+import "../styles/sidebar.scss";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
+    <meta name="description" content="Links to corners of the web" />
+    <title>Links</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="sidebar-container">
+      <span class="name">
+        <a class="name-link" href="/">Adarsh</a>
+      </span>
+      <div style={{ maxWidth: "350px" }}>
+        I reside in many corners of the web. I collect things on ✶✶{" "}
+        <a class="wavy-link" href="https://www.cosmos.so/adarzh" target="_blank"
+          >Cosmos</a
+        >
+        . I always have my hands full with (side) projects, which I publish on 💻{
+          " "
+        }
+        <a
+          class="wavy-link"
+          href="https://github.com/adarzh-sys"
+          target="_blank">GitHub</a
+        >{" "}
+        wherever possible. You can view a nice version of my resume on 📃{" "}
+        <a
+          class="wavy-link"
+          href="https://web.archive.org/web/20250122020808/read.cv/adarzh"
+          target="_blank"
+        >
+          Read.cv
+        </a>
+        . For the no-funny-business side of things, see my 💼{" "}
+        <a
+          class="wavy-link"
+          href="https://www.linkedin.com/in/adarzh"
+          target="_blank">LinkedIn</a
+        >
+        . I try to read as much as I can, and update my reading lists on 📚{" "}
+        <a
+          class="wavy-link"
+          href="https://www.goodreads.com/user/show/47941642-adarzh"
+          target="_blank"
+        >
+          Goodreads
+        </a>
+        . I have an 📸{" "}
+        <a
+          class="wavy-link"
+          href="https://www.instagram.com/teaesthete"
+          target="_blank">Instagram</a
+        >
+        , but I'm not active on there. I'm not a big movie person but I've been watching
+        more of them, and was persuaded to make a 🍿{" "}
+        <a
+          class="wavy-link"
+          href="https://letterboxd.com/adarzh/"
+          target="_blank">Letterboxd</a
+        >
+        , so I have that too. Though, most times, I'm on 🐦{" "}
+        <a
+          class="wavy-link"
+          href="https://twitter.com/teaesthete"
+          target="_blank">Twitter</a
+        >
+        . Phew.
+      </div>
+
+      <div style={{ paddingBottom: "55px" }}>
+        <a href="/">← Home</a>
+      </div>
+    </div>
+  </body>
+</html>

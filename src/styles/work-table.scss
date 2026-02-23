@@ -1,0 +1,49 @@
+@use 'base';
+
+.content-wrapper {
+  background-color: base.$gray-bg;
+}
+
+.content-container {
+  position: relative;
+  padding: 25px;
+  height: 100dvh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.content-message {
+  position: absolute;
+  color: base.$gray-content;
+  width: 25%;
+  left: 25%;
+  top: 50%;
+}
+
+.content-message-hidden {
+  display: none;
+  position: absolute;
+  color: base.$gray-content;
+  width: 25%;
+  left: 25%;
+  top: 50%;
+}
+
+@media screen and (max-width: 864px) {
+  .content-container {
+    position: relative;
+    padding: 15px;
+    height: 100dvh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .content-message {
+    position: absolute;
+    color: base.$gray-content;
+    width: 50%;
+    left: 25%;
+    top: 50%;
+  }
+}
+

@@ -1,0 +1,94 @@
+---
+import "@fontsource/fragment-mono";
+import "../styles/sidebar.scss";
+import WorkList from "../components/WorkList";
+import ListeningTo from "../components/Listening";
+import Reading from "../components/Reading.astro";
+import Currently from "../components/Currently.astro";
+
+let url;
+let dateFormat;
+
+try {
+  const response = await fetch(
+    `https://api.github.com/repos/yihui-hu/yihui-work/commits`,
+  );
+  if (response.ok) {
+    const data = await response.json();
+    if (Array.isArray(data) && data.length > 0) {
+      url = data[0].html_url;
+      const rawDate = data[0].commit.committer.date;
+      const date = new Date(rawDate);
+      dateFormat =
+        date.getHours() +
+        ":" +
+        (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()) +
+        ", " +
+        date.toDateString();
+    }
+  }
+} catch (error) {
+  console.error("Error fetching GitHub commits:", error);
+}
+---
+
+<div class="sidebar-container">
+  <span class="name">
+    <a class="name-link" href="/">Adarsh</a>
+    <a class="gray-link" href="/about">About</a>
+  </span>
+  <div class="about-container">
+    <span class="about-blurb">
+      Interaction Tech Student at
+      <a
+        href="https://www.utwente.nl/en/education/master/programmes/interaction-technology/"
+        target="_blank">University of Twente</a
+      >, previously UX at
+      <a href="https://www.goapptiv.com" target="_blank">GoApptiv</a>
+      and an Electrical Engineer. Find me on
+      <a href="https://www.linkedin.com/in/adarzh" target="_blank">LinkedIn</a>,
+      <a href="https://github.com/adarzh-sys" target="_blank">GitHub</a>,
+      <a href="https://twitter.com/teaesthete" target="_blank">Twitter</a>,
+      <a href="https://www.instagram.com/teaesthete" target="_blank"
+        >Instagram</a
+      >, and <a href="/links"> more →</a>
+      {
+        /* Sometimes I <a
+        href="/notes"
+        class="wavy-link">write</a
+      >. */
+      }
+    </span>
+  </div>
+  <WorkList client:load />
+  <ListeningTo client:load />
+  <Reading />
+  <Currently />
+  <div class="about-blurb">
+    <span>
+      This site is built with
+      <a href="https://astro.build" target="_blank">Astro</a>
+      and typeset in <a
+        href="https://fonts.google.com/specimen/Fragment+Mono"
+        target="_blank">Fragment Mono</a
+      > and
+      <a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a
+      >. View the source code
+      <a
+        href="https://github.com/adarsh/adarsh.github.io"
+        class="wavy-link"
+        target="_blank">here</a
+      >.
+    </span>
+  </div>
+  {
+    url && dateFormat && (
+      <span class="last-updated">
+        <a href={url} id="last-updated">
+          {" "}
+          Last updated: {dateFormat}
+        </a>
+      </span>
+    )
+  }
+</div>

@@ -1,0 +1,83 @@
+@use 'base';
+
+div {
+  font-family: "Fragment Mono", monospace, Arial, Helvetica, sans-serif;;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  gap: 55px;
+  padding: 25px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-blurb {
+  width: 55%;
+}
+
+.list {
+  margin-top: 0px;
+  margin-left: -10px;
+  margin-bottom: -5px;
+}
+
+.last-updated,
+#last-updated {
+  color: base.$gray-content;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-blurb {
+    width: 80%;
+  }
+
+  .sidebar-container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .about-blurb {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-blurb {
+    width: 70%;
+  }
+
+  .sidebar-container {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,25 @@
+---
+import Sidebar from "../layouts/Sidebar.astro";
+import WorkTable from "../components/WorkTable";
+import "../styles/global.scss";
+import "../styles/index.scss";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Personal site of Adarsh." />
+    <title>Adarsh</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="index-container">
+      <Sidebar />
+      <WorkTable client:only="react" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+---
+import Sidebar from "../layouts/Sidebar.astro";
+import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/about.scss";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Adarsh personal site" />
+    <title>About</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="index-container">
+      <div id="sidebar">
+        <Sidebar />
+      </div>
+      <div class="about-page-wrapper">
+        <div class="about-page-container">
+          <span>Me</span>
+          <div>
+            <img
+              class="about-image"
+              src="https://yihui-work.s3.us-east-2.amazonaws.com/toe-recreation.gif"
+            />
+            <span class="about-image-caption">c. Dec 2021</span>
+          </div>
+          <div class="about" style={{ marginBottom: "55px" }}>
+            <span>Hello! I'm Adarsh.</span>
+            <span>
+              I'm from Kerala, a beautiful state in India, currently studying
+              Interaction Technology at Universiteit Twente in Enschede. I work
+              at the intersection of human behavior, technology, and systems,
+              building interactive prototypes where AI, design, and real-world
+              workflows meet. Outside coursework, I explore speculative futures,
+              interaction models, and automation tools.
+            </span>
+            <span>
+              You can view my CV <a
+                href="https://drive.google.com/file/d/1O5RdirrU7IDvmsVPGWqLS91VsayWJtmD/view?usp=sharing"
+                target="_blank"
+                class="wavy-link">here</a
+              >.
+            </span>
+          </div>
+        </div>
+        <div class="back-button">
+          <span class="back-button">
+            <a class="gray-link" href="/">Home</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const mobile = window.innerWidth <= 864 ? true : false;
+  document.getElementById("article-body")!.style.backgroundColor = mobile
+    ? "black"
+    : "";
+</script>
