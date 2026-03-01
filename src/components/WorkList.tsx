@@ -64,18 +64,25 @@ const WorkList = () => {
           all
         </span>
         <span
-          id="code"
-          className="tag deselected"
-          onClick={() => updateTags("code")}
-        >
-          code
-        </span>
-        <span
           id="design"
           className="tag deselected"
           onClick={() => updateTags("design")}
         >
           design
+        </span>
+        <span
+          id="robots"
+          className="tag deselected"
+          onClick={() => updateTags("robots")}
+        >
+          robots
+        </span>
+        <span
+          id="data"
+          className="tag deselected"
+          onClick={() => updateTags("data")}
+        >
+          data
         </span>
         <span
           id="art"
@@ -94,8 +101,8 @@ const WorkList = () => {
                 id={work.title}
                 className={`work-item`}
                 data-category={work.category}
-                onMouseEnter={isMobile ? () => {} : () => handleHover(work.title, true)}
-                onMouseLeave={isMobile ? () => {} : () => handleHover(work.title, false)}
+                onMouseEnter={isMobile ? () => { } : () => handleHover(work.title, true)}
+                onMouseLeave={isMobile ? () => { } : () => handleHover(work.title, false)}
               >
                 <span className="work-title">{work.title}</span>
                 <span className="work-description">{work.description}</span>

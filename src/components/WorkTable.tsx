@@ -64,12 +64,12 @@ const WorkTable = () => {
                   defaultPosition={positions[index]}
                   onMouseDown={
                     width < 864
-                      ? () => {}
+                      ? () => { }
                       : () => selectedWorks.set(imageData.id)
                   }
                   onStart={
                     width < 864
-                      ? () => {}
+                      ? () => { }
                       : () => selectedWorks.set(imageData.id)
                   }
                 >
@@ -85,11 +85,11 @@ const WorkTable = () => {
                     src={imageData.url}
                     onMouseEnter={
                       width < 864
-                        ? () => {}
+                        ? () => { }
                         : () => selectedWorks.set(imageData.id)
                     }
                     onMouseLeave={
-                      width < 864 ? () => {} : () => selectedWorks.set("all")
+                      width < 864 ? () => { } : () => selectedWorks.set("all")
                     }
                   />
                 </Draggable>

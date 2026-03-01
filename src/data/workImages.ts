@@ -5,6 +5,7 @@ interface WorkImageData {
 }
 
 const workImages: WorkImageData[] = [
+  /*
   {
     url: "https://yihui-work.s3.us-east-2.amazonaws.com/typo_super_bubble.png",
     id: "s-b",
@@ -94,6 +95,12 @@ const workImages: WorkImageData[] = [
     url: "https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_stories.webp",
     id: "ZINEDEF",
     category: "art design",
+  },
+  */
+  {
+    url: "https://storage.googleapis.com/zh-portfolio-bucket/triadic-robot/triadic-robot.png",
+    id: "Triadic robot",
+    category: "design robots",
   },
 ];
 

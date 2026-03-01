@@ -10,6 +10,7 @@ interface WorkListItem {
 }
 
 export const works: WorkListItem[] = [
+  /*
   {
     title: "s-b",
     description: "web experiment for Typo*",
@@ -20,6 +21,18 @@ export const works: WorkListItem[] = [
     new: true,
     wip: false,
   },
+  */
+  {
+    title: "Triadic robot",
+    description: "triadic interactions in healthcare",
+    blurb: "triadic interactions in healthcare",
+    year: "2025",
+    category: "design robots",
+    url: "/works/triadic-robot",
+    new: true,
+    wip: false,
+  },
+  /*
   {
     title: "personas",
     description: "collection of my in-game characters",
@@ -115,7 +128,7 @@ export const works: WorkListItem[] = [
     description: "pared-back Pokémon encyclopedia",
     blurb: "bulbapedia-lite",
     year: "2022",
-    category: "code",
+    category: "code electrical",
     url: "/works/pokesearch",
     new: false,
     wip: false,
@@ -190,4 +203,5 @@ export const works: WorkListItem[] = [
     new: false,
     wip: false,
   },
+  */
 ];
