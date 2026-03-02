@@ -1,6 +1,7 @@
 ---
 import Sidebar from "../layouts/Sidebar.astro";
 import WorkTable from "../components/WorkTable";
+import MacTerminal from "../components/MacTerminal";
 import "../styles/global.scss";
 import "../styles/index.scss";
 import { ViewTransitions } from "astro:transitions";
@@ -20,6 +21,7 @@ import { ViewTransitions } from "astro:transitions";
     <div class="index-container">
       <Sidebar />
       <WorkTable client:only="react" />
+      <MacTerminal client:load />
     </div>
   </body>
 </html>

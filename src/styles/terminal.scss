@@ -1,0 +1,163 @@
+@use 'base';
+
+.mac-terminal {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    margin: 0 1rem;
+    font-family: monospace;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+    border: 1px solid base.$gray-content;
+}
+
+@media screen and (max-width: 864px) {
+    .mac-terminal {
+        margin: 0;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: auto;
+        max-width: none;
+        margin-top: 2rem;
+    }
+}
+
+.mac-terminal-header {
+    background-color: #1f2937;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.mac-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+}
+
+.mac-dot-red {
+    background-color: #ef4444;
+}
+
+.mac-dot-yellow {
+    background-color: #eab308;
+}
+
+.mac-dot-green {
+    background-color: #22c55e;
+}
+
+.mac-title {
+    font-size: 0.875rem;
+    background-color: transparent;
+    color: #d1d5db;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.mac-icon {
+    color: #d1d5db;
+}
+
+.mac-terminal-body {
+    padding: 1rem;
+    color: #e5e7eb;
+    font-size: 0.75rem;
+    height: calc(400px - 1.5rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.mac-chat-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.mac-message-row {
+    margin-bottom: 0.5rem;
+}
+
+.mac-user-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.mac-user-prompt {
+    color: #4ade80;
+}
+
+.mac-message-text {
+    white-space: pre-wrap;
+    font-family: inherit;
+    margin: 0;
+}
+
+.mac-typing {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
+
+.mac-input-form {
+    margin-top: 0.5rem;
+}
+
+.mac-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    @media screen and (min-width: 640px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.mac-input-prompt {
+    white-space: nowrap;
+}
+
+.mac-input-field {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+
+    &::placeholder {
+        color: #9ca3af;
+    }
+
+    @media screen and (min-width: 640px) {
+        flex: 1;
+    }
+}

@@ -23,13 +23,13 @@ export const works: WorkListItem[] = [
   },
   */
   {
-    title: "Triadic robot",
+    title: "healthcare-robot",
     description: "triadic interactions in healthcare",
     blurb: "triadic interactions in healthcare",
     year: "2025",
-    category: "design robots",
-    url: "/works/triadic-robot",
-    new: true,
+    category: "design robotics",
+    url: "/works/healthcare-robot",
+    new: false,
     wip: false,
   },
   /*

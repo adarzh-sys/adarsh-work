@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/Article.astro
-title: "Triadic robot"
+title: "healthcare-robot"
 pubDate: 2025-06-30
 description: "A qualitative, privacy-aware study on when a (robot) assistant can appropriately intervene in doctor–patient conversations using multimodal cues."
 author: "Adarsh"
