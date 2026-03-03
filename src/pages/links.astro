@@ -2,7 +2,7 @@
 import "@fontsource/fragment-mono";
 import "../styles/global.scss";
 import "../styles/sidebar.scss";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -12,7 +12,7 @@ import { ViewTransitions } from "astro:transitions";
     <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
     <meta name="description" content="Links to corners of the web" />
     <title>Links</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <div class="sidebar-container">

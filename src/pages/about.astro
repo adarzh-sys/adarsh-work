@@ -3,7 +3,7 @@ import Sidebar from "../layouts/Sidebar.astro";
 import "../styles/global.scss";
 import "../styles/index.scss";
 import "../styles/about.scss";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -14,7 +14,7 @@ import { ViewTransitions } from "astro:transitions";
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Adarsh personal site" />
     <title>About</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <div class="index-container">

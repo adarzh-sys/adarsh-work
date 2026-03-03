@@ -4,7 +4,7 @@ import WorkTable from "../components/WorkTable";
 import MacTerminal from "../components/MacTerminal";
 import "../styles/global.scss";
 import "../styles/index.scss";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -15,7 +15,7 @@ import { ViewTransitions } from "astro:transitions";
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Personal site of Adarsh." />
     <title>Adarsh</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <div class="index-container">

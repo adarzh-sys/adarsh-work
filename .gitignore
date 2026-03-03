@@ -19,3 +19,7 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# chat features
+pages/api/chat.ts
+components/MacTerminal.tsx

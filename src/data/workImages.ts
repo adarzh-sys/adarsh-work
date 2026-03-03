@@ -100,7 +100,12 @@ const workImages: WorkImageData[] = [
   {
     url: "https://storage.googleapis.com/zh-portfolio-bucket/triadic-robot/triadic-robot.png",
     id: "healthcare-robot",
-    category: "design robotics",
+    category: "design robots",
+  },
+  {
+    url: "https://storage.googleapis.com/zh-portfolio-bucket/reg/reg-poster.webp",
+    id: "reg",
+    category: "design robots",
   },
 ];
 
