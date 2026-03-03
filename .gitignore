@@ -21,8 +21,8 @@ pnpm-debug.log*
 .DS_Store
 
 # chat features
-pages/api/chat.ts
-components/MacTerminal.tsx
+src/pages/api/chat.ts
+src/components/MacTerminal.tsx
 
 # yh files
 src/pages/works/yihui/*
