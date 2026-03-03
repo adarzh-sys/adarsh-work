@@ -23,3 +23,6 @@ pnpm-debug.log*
 # chat features
 pages/api/chat.ts
 components/MacTerminal.tsx
+
+# yh files
+src/pages/works/yihui/*

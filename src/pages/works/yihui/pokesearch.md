@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "pokéSearch"
 pubDate: 2023-12-06
 description: "A pared-back Pokédex."
-author: "Adarsh"
+author: "Yihui"
 tags: ["code"]
 ---
 

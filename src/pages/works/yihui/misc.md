@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "Misc."
 pubDate: 2023-10-06
 description: "Miscellaneous design / art work over the years."
-author: "Adarsh"
+author: "Yihui"
 tags: ["art", "design"]
 ---
 

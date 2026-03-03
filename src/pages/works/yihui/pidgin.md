@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "Pidgin"
 pubDate: 2023-13-06
 description: "Automatically connect your liked / bookmarked tweets to Are.na."
-author: "Adarsh"
+author: "Yihui"
 tags: ["code"]
 ---
 

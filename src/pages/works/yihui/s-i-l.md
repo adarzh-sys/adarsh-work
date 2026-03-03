@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "Sites I Like"
 pubDate: 2023-15-06
 description: "A micro-site of sites I like."
-author: "Adarsh"
+author: "Yihui"
 tags: ["code", "design"]
 ---
 

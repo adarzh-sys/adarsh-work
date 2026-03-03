@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "henesys"
 pubDate: 2023-13-06
 description: "A barebones bookmarking, capture-anything site."
-author: "Adarsh"
+author: "Yihui"
 tags: ["code", "design"]
 ---
 

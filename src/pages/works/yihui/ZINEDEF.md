@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "ZINEDEF"
 pubDate: 2023-10-06
 description: "Printed zine about my time in the military."
-author: "Adarsh"
+author: "Yihui"
 tags: ["art", "design"]
 ---
 

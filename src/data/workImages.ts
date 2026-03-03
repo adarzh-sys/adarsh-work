@@ -102,11 +102,6 @@ const workImages: WorkImageData[] = [
     id: "healthcare-robot",
     category: "design robots",
   },
-  {
-    url: "https://storage.googleapis.com/zh-portfolio-bucket/reg/reg-poster.webp",
-    id: "reg",
-    category: "design robots",
-  },
 ];
 
 export default workImages;

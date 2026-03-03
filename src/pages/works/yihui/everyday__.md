@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "Everyday_________"
 pubDate: 2023-13-06
 description: "Body of 9 artworks for the IB HL VA program."
-author: "Adarsh"
+author: "Yihui"
 tags: ["art"]
 ---
 

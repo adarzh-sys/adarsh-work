@@ -1,6 +1,6 @@
 # adarsh.work
 
-An updated portfolio / personal site for 2023, built with [Astro](https://astro.build) and typeset in [Fragment Mono](https://fonts.google.com/specimen/Fragment+Mono) and [Inter](https://fonts.google.com/specimen/Inter).
+An updated portfolio / personal site for 2025, built with [Astro](https://astro.build) and typeset in [Fragment Mono](https://fonts.google.com/specimen/Fragment+Mono) and [Inter](https://fonts.google.com/specimen/Inter).
 
 ## 🚧 Project Structure
 

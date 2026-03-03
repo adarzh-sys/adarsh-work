@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "Goodreads"
 pubDate: 2023-10-06
 description: "An exploration / refinement of the Goodreads iOS app."
-author: "Adarsh"
+author: "Yihui"
 tags: ["design"]
 ---
 

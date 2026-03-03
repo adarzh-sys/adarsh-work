@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "Graphite Reproductions"
 pubDate: 2023-10-06
 description: "Graphite reproductions of various paintings."
-author: "Adarsh"
+author: "Yihui"
 tags: ["art"]
 ---
 

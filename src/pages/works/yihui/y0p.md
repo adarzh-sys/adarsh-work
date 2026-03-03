@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "y0p"
 pubDate: 2023-13-06
 description: "A small, silly experiment in text-highlighting."
-author: "Adarsh"
+author: "Yihui"
 tags: ["code"]
 ---
 

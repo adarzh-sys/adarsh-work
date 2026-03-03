@@ -3,7 +3,7 @@ layout: ../../layouts/Article.astro
 title: "yhhu.xyz"
 pubDate: 2023-15-06
 description: "Old personal site of Adarsh."
-author: "Adarsh"
+author: "Yihui"
 tags: ["code", "design", "art"]
 ---
 
