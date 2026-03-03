@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Article.astro
+layout: ../../../layouts/Article.astro
 title: "arith"
 pubDate: 2023-14-06
 description: "Image (de)compressor built in C, then ported to JavaScript."

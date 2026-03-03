@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Article.astro
+layout: ../../../layouts/Article.astro
 title: "Famicase"
 pubDate: 2023-10-06
 description: "Famicase submission no. 127 for 2022."

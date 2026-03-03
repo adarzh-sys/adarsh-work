@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/Article.astro
+layout: ../../../layouts/Article.astro
 title: "Figma Competitive Designing Plugin"
 pubDate: 2023-15-06
 description: "A Figma plugin for the riveting mind sport of competitive design."
